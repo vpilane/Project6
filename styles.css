@@ -172,7 +172,7 @@ html, body {
 .popup .popuptext {
   visibility: hidden;
   width: 260px;
-  background-color: #c23636;
+  background-color: #aa6969;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -268,7 +268,7 @@ html, body {
 .bios-section#bbb p {
   margin: 8px 0;
 }
-}
+
 
 .bios-divider {
   border: none;
@@ -290,14 +290,19 @@ html, body {
 .biosHeader #h2h{
   margin-right: 200px;
 }
-footer p{
-  text-align: center;
-  color: #fff;
-  background-color: #794e86;
-  padding: 10px;
+footer {
   position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
+  background-color: #794e86;
+  z-index: 2000;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
   font-size: 16px;
 }
 #ppp{
