@@ -91,7 +91,12 @@
     font-size: 18px;
     background-color: #120368;
     color: yellow;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.biosTop{
+  margin-left: -450px;
+  margin-top: 20px;
+  padding-top: 1px;
 }
 .view {
   display: none;
@@ -207,12 +212,12 @@
 }
 .biosTop ul li{
   list-style: none;
-  color: lightgray;
+  color: rgb(184, 194, 44);
   font-size: 20px;
   cursor: pointer;
 }
 .biosTop ul li:hover{
-  background-color: gray;
+  background-color: rgb(117, 137, 143);
   font-size: 20px;
   cursor: pointer;
 }
@@ -251,4 +256,13 @@ u
 
 #cpu{
   background-color: #7294b8;
+}
+.biosHeader{
+  display: flex;
+  color: white;
+  text-align: justify;
+  justify-content: space-between;
+}
+.biosHeader #h2h{
+  margin-right: 200px;
 }
