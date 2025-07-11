@@ -23,78 +23,98 @@
             <img src="assets/motherboard.webp" alt="" class="mb" height="300px">
             <p>The motherboard is the main circuit board of a computer. It connects the CPU, memory, storage, and other peripherals.</p>
             <div class="motherboard-components">
-                <div class="component popup">
-                    <h3 onclick="toggleImage(this)">RAM</h3>
+                <div class="component popup" onclick="toggleImage(this)">
+                    <h1>RAM</h1>
                     <span class="popuptext">
-                    <img src="assets/ram.webp" alt="RAM" height="100px">
-                    <p>
-                        Specifically, RAM stands for “Random Access Memory” or “Ready Access Memory”. It is a temporary notepad where your computer sends information to disk, or to the storage place of instructions from other input devices. The term “random access” indicates that memory locations in RAM are accessible in any order unlike sequential access of a data cassette tape.
-                    </p>
+                        <img src="assets/ram.webp" alt="RAM" height="150px">
+                        <p>
+                            Specifically, RAM stands for “Random Access Memory” or “Ready Access Memory”. It is a temporary notepad where your computer sends information to disk, or to the storage place of instructions from other input devices. The term “random access” indicates that memory locations in RAM are accessible in any order unlike sequential access of a data cassette tape.
+                        </p>
                     </span>
                 </div>
 
-                <div class="component popup">
-                    <h3 onclick="toggleImage(this)">CPU</h3>
+                <div class="component popup" id="cpu" onclick="toggleImage(this)">
+                    <h1>CPU</h1>
                     <span class="popuptext">
-                    <img src="assets/cpu.jpeg" alt="CPU" height="100px">
-                    <p>
-                        CPU means ‘Central Processing Unit’. This is the place of computer data handling. Moreover, it does all the data manipulation, calculations and formatting data for output. Hence, whenever someone buys a computer, he/she becomes more conscious about the CPU and its capabilities.
-                        The execution of the instructions within the computer system is very fast. 
-                    </p>
+                        <img src="assets/cpu.jpeg" alt="CPU" height="150px">
+                        <p>
+                            CPU means ‘Central Processing Unit’. This is the place of computer data handling. Moreover, it does all the data manipulation, calculations and formatting data for output. Hence, whenever someone buys a computer, he/she becomes more conscious about the CPU and its capabilities.
+                            The execution of the instructions within the computer system is very fast. 
+                        </p>
                     </span>
                 </div>
 
-                <div class="component popup">
-                    <h3 onclick="toggleImage(this)">ROM</h3>
+                <div class="component popup" onclick="toggleImage(this)">
+                    <h1 >ROM</h1>
                     <span class="popuptext">
-                    <img src="assets/rom.webp" alt="ROM" width="100px">
-                    <p>
-                        Read-only memory (ROM) is used to store data that controls the most basic computer functionality, such as starting up, detecting peripherals and operating the computer fan. As the name suggests, the data cannot be edited by the system or users and, unlike RAM, the data stays recorded even when the computer is off.
-                    </p>
+                        <img src="assets/rom.webp" alt="ROM" height=110px>
+                        <p>
+                            Read-only memory (ROM) is used to store data that controls the most basic computer functionality, such as starting up, detecting peripherals and operating the computer fan. As the name suggests, the data cannot be edited by the system or users and, unlike RAM, the data stays recorded even when the computer is off.
+                        </p>
                     </span>
                 </div>
 
-                <div class="component popup">
-                    <h3 onclick="toggleImage(this)">Power Unit</h3>
+                <div class="component popup" onclick="toggleImage(this)">
+                    <h1 >Power Unit</h1>
                     <span class="popuptext">
-                    <img src="assets/power.webp" alt="Power Unit" height="100px">
-                    <p>
-                         Power Supply Unit (PSU)—is a critical hardware component in any computer system.
+                        <img src="assets/power.webp" alt="Power Unit" height="150px">
+                        <p>
+                            Redundant Power Supply vs Uninterruptible Power Supply (RPS vs UPS).<br>
+                            The redundant power supply (RPS) is a kind of power supply used in the server. It is composed of two identical power supplies. The chip control power supply performs load balancing. When one power supply fails, the other power supply can take over its work immediately.<br>
+                            UPS, that is, uninterruptible power supply, is a system device that connects the battery (mostly lead-acid maintenance-free battery) to the host, and converts the DC power into commercial power through the module circuit of the host inverter. It is mainly used to provide a stable and uninterrupted power supply to a single computer, computer network system or other power electronic equipment such as solenoid valves and pressure transmitters.
 
-                    </p>
+
+                        </p>
                     </span>
                 </div>
 
-                <div class="component popup">
-                    <h3 onclick="toggleImage(this)">CMOS</h3>
+                <div class="component popup" onclick="toggleImage(this)">
+                    <h1 >CMOS</h1>
                     <span class="popuptext">
-                    <img src="assets/cmos.webp" alt="CMOS" height="100px">
-                    <p>
-                        CMOS refers to a small area of memory on the motherboard that stores BIOS/UEFI settings (like time, date, boot order, hardware configuration).
-                        It is powered by a small battery—called the CMOS battery—so it retains data even when the computer is turned off.
-                    </p>
+                        <img src="assets/cmos.webp" alt="CMOS" height="150px">
+                        <p>
+                            CMOS refers to a small area of memory on the motherboard that stores BIOS/UEFI settings (like time, date, boot order, hardware configuration).
+                            It is powered by a small battery—called the CMOS battery—so it retains data even when the computer is turned off.
+                        </p>
                     </span>
                 </div>
 
-                <div class="component popup">
-                    <h3 onclick="toggleImage(this)">Storage Drive</h3>
+                <div class="component popup" onclick="toggleImage(this)">
+                    <h1 >Storage Drive</h1>
                     <span class="popuptext">
-                    <img src="assets/storage.webp" alt="Storage" height="100px">
-                    <p>
-                        Your computer’s hard disk drive is like an audio CD that you possess at home – except your computer can read and write to it. In other words, your computer can 
-                        take data from your hard drive (to process it in the CPU or place it in RAM to work with).
+                        <img src="assets/storage.webp" alt="Storage" height="150px">
+                        <p>
+                            Your computer’s hard disk drive is like an audio CD that you possess at home – except your computer can read and write to it. In other words, your computer can 
+                            take data from your hard drive (to process it in the CPU or place it in RAM to work with).
 
-                    </p>
+                        </p>
                     </span>
                 </div>
                 </div>
-
-
-
         </div>
 
         <div id="bios" class="view">
-            <h2>BIOS View</h2>
+            <div class="biosTop">
+                <ul>
+                    <li>Information</li>
+                    <li>Main</li>
+                    <li>Advanced</li>
+                    <li>Security</li>
+                    <li>Boot</li>
+                    <li>Exit</li>
+                </ul>
+            </div>
+            <div class="biosContent">
+               <div class="bios1">
+
+               </div>
+               <div class="bios2">
+
+               </div>
+            </div>
+            <div class="">
+
+            </div>
             <p>The BIOS (Basic Input/Output System) is firmware that initializes hardware during the booting process and provides runtime services for operating systems and programs.</p>
 
         </div>

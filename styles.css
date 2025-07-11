@@ -11,7 +11,9 @@
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     position: sticky;
-    border-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  
     text-align: center;
     padding: 10px;
     font-size: 16px;
@@ -37,17 +39,52 @@
 }
 #motherboard {
     text-align: center;
-    background-color: rgb(156, 202, 202);
-    margin-top: 20px;
-    border-radius: 3px;
+    background-color:rgb(154, 184, 192);
+    margin-top: 0px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+   
     padding: 20px;
 }
 .motherboard-components{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(2, 1fr);
-    background-color: azure;
+    background-color: rgb(218, 225, 226);
+    border-radius: 5px;
+    border: 2px solid #272222;
+    margin: 150px 150px;
 }
+
+.component.popup {
+  border: 2px solid #000;        
+  border-radius: 8px;             
+  padding: 10px;                
+  margin: 10px;                   
+  background-color: #d16161;   
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+  transition: transform 0.2s ease;
+}
+.component.popup:hover {
+    transform: scale(1.05);
+}
+.component.popup:nth-child(odd) {
+  border: 2px solid #000;        
+  border-radius: 8px;             
+  padding: 10px;                
+  margin: 10px;                   
+  background-color: #8dcc28;   
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+}
+.component.popup:nth-child(2) {
+  border: 2px solid #000;        
+  border-radius: 8px;             
+  padding: 10px;                
+  margin: 10px; 
+  height: 100px; 
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+}
+
 #bios{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -72,8 +109,7 @@
   text-decoration: underline;
 }
 
-<style>
-/* Modal background */
+
 .modal {
   display: none; 
   position: fixed;
@@ -84,10 +120,10 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(128, 85, 85, 0.8);
 }
 
-/* Modal content (image) */
+
 .modal-content {
   margin: auto;
   display: block;
@@ -116,14 +152,14 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
-  user-select: none;
+
 }
 
-/* Popup content hidden by default */
+
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
-  background-color: #555;
+  width: 260px;
+  background-color: #c23636;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -136,7 +172,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Arrow */
+
 .popup .popuptext::after {
   content: "";
   position: absolute;
@@ -145,13 +181,18 @@
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #795252 transparent transparent transparent;
 }
 
-/* Show popup */
+
 .popup .show {
   visibility: visible;
   animation: fadeIn 0.5s;
+}
+
+.popuptext p{
+    border-radius: 9px solid #b18888;
+    border-color: #120368;
 }
 
 @keyframes fadeIn {
@@ -159,3 +200,55 @@
   to {opacity: 1;}
 }
 
+.biosTop ul{
+  display: flex;
+  justify-content: center;
+  gap: 190px;
+}
+.biosTop ul li{
+  list-style: none;
+  color: lightgray;
+  font-size: 20px;
+  cursor: pointer;
+}
+.biosTop ul li:hover{
+  background-color: gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+.biosContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  font-size: 20px;
+  color: white;
+  background-color: #120368;
+  gap: 20px;
+}
+.bios1 {
+  background-color: #333;
+  width: 400px;
+  position: relative; 
+}
+
+.bios1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px; 
+  height: 100%;
+  background-color: rgb(158, 62, 62); 
+}u
+u
+.bios2 {
+  background-color: #ccc;
+  width: 900px;
+  height: 100%; 
+}
+
+#cpu{
+  background-color: #7294b8;
+}

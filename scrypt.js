@@ -10,15 +10,29 @@ function showView(viewId) {
     selectedView.classList.add('active');
   }
 }
-function toggleImage(headerElement) {
-  // Close all other popups
-  const allPopups = document.querySelectorAll('.popuptext');
-  allPopups.forEach(popup => popup.classList.remove('show'));
 
-  // Toggle the one related to this header
-  const thisPopup = headerElement.parentElement.querySelector('.popuptext');
-  if (thisPopup) {
-    thisPopup.classList.toggle('show');
-  }
+function toggleImage(componentDiv) {
+    const popup = componentDiv.querySelector('.popuptext');
+    const isOpen = popup.classList.contains('show');
+
+    // Close all popups
+    document.querySelectorAll('.popuptext.show').forEach(function(p) {
+        p.classList.remove('show');
+    });
+
+    // If it was not open, open it
+    if (!isOpen) {
+        popup.classList.add('show');
+    }
 }
+
+// Hide popup when clicking outside
+document.addEventListener('click', function(event) {
+    // Check if the click is inside a component popup
+    if (!event.target.closest('.component.popup')) {
+        document.querySelectorAll('.popuptext.show').forEach(function(popup) {
+            popup.classList.remove('show');
+        });
+    }
+});
 
